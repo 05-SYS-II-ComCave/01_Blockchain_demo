@@ -40,6 +40,12 @@ class Block{
         return SHA256(`${timestamp}${lastHash}${data}`).toString();
     }
 
+
+    /* 
+        Proof of Work! - Demo
+        Idee: [@HolgerSin](https://github.com/HolgerSin) 
+    */
+
     static leadingZeroHash(timestamp,lastHash,blockData){
         
         let toBeHashed = timestamp + lastHash + blockData;
